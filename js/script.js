@@ -11,3 +11,7 @@ Non è necessario provvedere alla validazione delle email*/
 //creo una lista di email di invitati a duna festa//
 
 const listEmail = ["ironman@gmail.com","walter.white@gmail.com","peter.parker@gmail.com","gerald.di.rivia@gmail.com","monkey.d.luffy@gmail.com","nico.robin@gmail.com","mikasa.ackerman@gmail.com","nezuko.kamado.@gmail.com","fujiko.mine@gmail.com","bulma.brief@gmail.com"];
+
+//chiedi all'utente la sua email//
+
+const userEmail = parseInt(prompt("inserisci la tua email"));
