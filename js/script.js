@@ -15,3 +15,22 @@ const listEmail = ["ironman@gmail.com","walter.white@gmail.com","peter.parker@gm
 //chiedi all'utente la sua email//
 
 const userEmail = parseInt(prompt("inserisci la tua email"));
+
+let found = ("EMAIL TROVATA! puoi accedere al party!");
+let notFound =("EMAIL NON TROVATA!!!");
+//controlla che sia nella lista degli invitati e stampa un messaggio sull'esito del controllo//
+
+for(let i = 0; i < listEmail.length; i++){
+  if(userEmail === listEmail[i] ){
+  
+  }
+}
+
+
+
+  
+    
+  
+   
+    
+
