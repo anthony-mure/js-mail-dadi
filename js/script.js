@@ -8,24 +8,32 @@ Si può fare? Certo che si basta ragionare un po’.
 Nota:
 Non è necessario provvedere alla validazione delle email*/
 
-//creo una lista di email di invitati a duna festa//
+//creo una lista di email di invitati ad una festa//
 
 const listEmail = ["ironman@gmail.com","walter.white@gmail.com","peter.parker@gmail.com","gerald.di.rivia@gmail.com","monkey.d.luffy@gmail.com","nico.robin@gmail.com","mikasa.ackerman@gmail.com","nezuko.kamado.@gmail.com","fujiko.mine@gmail.com","bulma.brief@gmail.com"];
 
 //chiedi all'utente la sua email//
 
-const userEmail = parseInt(prompt("inserisci la tua email"));
+let userEmail = prompt("inserisci la tua email");
 
-let found = ("EMAIL TROVATA! puoi accedere al party!");
-let notFound =("EMAIL NON TROVATA!!!");
+let check = false; //variabile di controllo//
+
 //controlla che sia nella lista degli invitati e stampa un messaggio sull'esito del controllo//
 
-for(let i = 0; i < listEmail.length; i++){
-  if(userEmail === listEmail[i] ){
-  
+for(let i = 0 ; i < listEmail.length ; i++){
+
+  if(userEmail === listEmail[i]){
+
+    check = true;
   }
 }
 
+if(check === true){
+  console.log("MAIL TROVATA!!");
+}
+else{
+  console.log("EMAIL NON TROVATA!!");
+}
 
 
   
